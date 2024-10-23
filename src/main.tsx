@@ -33,7 +33,7 @@ Devvit.addCustomPostType({
   name: 'Experience Post',
   height: 'regular',
   render: (_context) => {
-    const [displayedNumber,setDisplayedNumber] = useState(0);
+    const [ displayedNumber, setDisplayedNumber] = useState(0);
 
     return (
       <vstack height="100%" width="100%" gap="medium" alignment="center middle">
@@ -45,7 +45,7 @@ Devvit.addCustomPostType({
           height="48px"
           width="48px"
         />
-        <text size="large">{`Click counter: ${displayedNumber}`}</text>
+        <text size="large">{`Your random number is: ${displayedNumber}`}</text>
         <button appearance="primary" onPress={
             () => {
               const randomNumber = getRandomNumber()
